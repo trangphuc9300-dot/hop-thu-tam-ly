@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hộp thư tâm lý 11B10 & 11B14</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; background-color: #f4f7f6; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        textarea { width: 100%; height: 150px; margin: 20px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>💌 Hộp thư tâm lý</h2>
+        <p>Mọi chia sẻ đều ẩn danh. Thầy luôn ở đây lắng nghe em.</p>
+        <form id="tamSuForm">
+            <textarea id="content" placeholder="Viết những khó khăn, tâm tư của em tại đây..." required></textarea>
+            <button type="submit">Gửi tâm sự</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('tamSuForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn em đã tin tưởng chia sẻ! Thầy đã nhận được tâm thư của em.');
+            // Sau khi thầy kết nối Google Sheets, code xử lý sẽ nằm ở đây
+        });
+    </script>
+</body>
+</html>
