@@ -2,30 +2,100 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Hộp thư tâm lý 11B10 & 11B14</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góc Tâm Sự - Hiểu Về Hành Vi Ái Kỷ</title>
+    <!-- Sử dụng Google Fonts cho phông chữ trẻ trung -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; background-color: #f4f7f6; }
-        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        textarea { width: 100%; height: 150px; margin: 20px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
-        button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.8;
+            /* Nền gradient tươi tắn */
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            color: #4a4a4a;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 700px;
+            margin: auto;
+            /* Viền trên màu hồng san hô nổi bật */
+            border-top: 8px solid #ff7f7f;
+        }
+        h1 {
+            color: #ff6b6b;
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        p { margin-bottom: 20px; }
+        .highlight {
+            font-weight: bold;
+            color: #40c9a2; /* Màu xanh mint nhấn mạnh */
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            margin: 30px 0;
+        }
+        .btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0 auto;
+            padding: 15px 35px;
+            background-color: #ff7f7f; /* Màu hồng san hô cho nút bấm */
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(255, 127, 127, 0.4);
+        }
+        .btn:hover {
+            background-color: #ff6b6b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            color: #888;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h2>💌 Hộp thư tâm lý</h2>
-        <p>Mọi chia sẻ đều ẩn danh. Thầy luôn ở đây lắng nghe em.</p>
-        <form id="tamSuForm">
-            <textarea id="content" placeholder="Viết những khó khăn, tâm tư của em tại đây..." required></textarea>
-            <button type="submit">Gửi tâm sự</button>
-        </form>
+        <h1>Góc Tâm Sự - Lắng Nghe & Thấu Hiểu</h1>
+        <p>Chào các bạn,</p>
+        <p>Có bao giờ bạn cảm thấy mệt mỏi trong một mối quan hệ, khi tiếng nói của mình dường như không được lắng nghe, hay cảm giác mình luôn phải là người nhún nhường trong các cuộc hội thoại?</p>
+        
+        <div class="highlight">
+            Những biểu hiện như đặt cái tôi lên trên hết, thao túng cảm xúc hay xem mình là trung tâm – hay còn gọi là hành vi ái kỷ (narcissism) – đôi khi hiện hữu rất gần quanh ta.
+        </div>
+
+        <p>Mình mở ra hộp thư này để lắng nghe những câu chuyện thật của bạn. Bạn không cần phải một mình đối mặt với những cảm xúc đó. Hãy gửi về đây những tình huống khiến bạn băn khoăn, mình sẽ cùng bạn giải mã và tìm cách ứng phó nhẹ nhàng nhất nhé!</p>
+        
+        <!-- Nút bấm với màu sắc mới -->
+        <!-- Đừng quên thay LINK_GOOGLE_FORM_CUA_BAN_O_DAY bằng link thực tế -->
+        <a href="LINK_GOOGLE_FORM_CUA_BAN_O_DAY" class="btn">Gửi chia sẻ của bạn tại đây</a>
+
+        <p class="signature">Thân ái,</p>
     </div>
 
-    <script>
-        document.getElementById('tamSuForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Cảm ơn em đã tin tưởng chia sẻ! Thầy đã nhận được tâm thư của em.');
-            // Sau khi thầy kết nối Google Sheets, code xử lý sẽ nằm ở đây
-        });
-    </script>
 </body>
 </html>
