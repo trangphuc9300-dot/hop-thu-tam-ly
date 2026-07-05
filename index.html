@@ -1,9 +1,9 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Góc Tâm Sự - Hiểu Về Ái Kỷ</title>
+    <title>Góc Tâm Sự & Trắc Nghiệm Tâm Lý</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,50 +12,48 @@
             color: #ffffff;
             margin: 0;
             padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
         .container {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 50px;
+            padding: 40px;
             border-radius: 30px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 { color: #00d2ff; font-size: 32px; margin-bottom: 20px; text-align: center; text-shadow: 0 0 10px rgba(0,210,255,0.3); }
-        .intro { font-size: 1.1em; margin-bottom: 30px; text-align: center; color: #e0e0e0; }
-        .btn-group { display: flex; flex-direction: column; gap: 20px; margin-top: 30px; }
-        .btn {
-            padding: 20px;
-            border-radius: 15px;
-            text-decoration: none;
-            font-weight: bold;
+            max-width: 800px;
+            margin: auto;
             text-align: center;
-            transition: all 0.4s ease;
-            color: #fff;
-            border: 1px solid rgba(255,255,255,0.1);
         }
-        .btn-heart { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
-        .btn-heart:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(255, 65, 108, 0.4); }
-        .btn-quiz { background: linear-gradient(45deg, #00d2ff, #3a7bd5); }
+        h1 { color: #00d2ff; margin-bottom: 20px; }
+        h2 { color: #ff9a9e; margin: 30px 0 20px 0; font-size: 24px; }
+        .form-container { width: 100%; border-radius: 15px; overflow: hidden; background: white; margin-bottom: 40px; }
+        .btn-quiz {
+            display: inline-block;
+            padding: 20px 40px;
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
         .btn-quiz:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4); }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Góc Tâm Sự</h1>
-        <p class="intro">Lắng nghe thấu hiểu bản thân. Nhận diện hành vi ái kỷ để làm chủ cảm xúc của chính mình.</p>
+        <h1>Góc Tâm Sự & Thấu Hiểu</h1>
         
-        <div class="btn-group">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOkFFUlrbiqhfrzr1BYzDW6wDcleTmh5ulQeHGzSvciE8E8A/viewform" target="_blank" class="btn btn-heart">💌 Chia sẻ tâm sự ẩn danh</a>
-            <a href="https://www.flexiquiz.com/SC/N/28c896b2-0121-4dc0-a3aa-f3eb8b405f8e" target="_blank" class="btn btn-quiz">🚀 Trắc nghiệm đánh giá bản thân</a>
+        <h2>💌 GỬI CHIA SẺ TÂM SỰ TẠI ĐÂY</h2>
+        <!-- Nhúng Google Form không hiện chữ Đang tải -->
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOkFFUlrbiqhfrzr1BYzDW6wDcleTmh5ulQeHGzSvciE8E8A/viewform?embedded=true" width="100%" height="600" frameborder="0"></iframe>
         </div>
+
+        <h2>✨ CÙNG LÀM TRẮC NGHIỆM NHÉ! ✨</h2>
+        <a href="https://www.flexiquiz.com/SC/N/28c896b2-0121-4dc0-a3aa-f3eb8b405f8e" target="_blank" class="btn-quiz">🚀 Bắt đầu trắc nghiệm đánh giá</a>
     </div>
 
 </body>
