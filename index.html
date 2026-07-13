@@ -47,7 +47,6 @@
         <h1>GÓC TÂM SỰ - LẮNG NGHE & THẤU HIỂU</h1>
         
         <h2>💌 GỬI CHIA SẺ TÂM SỰ TẠI ĐÂY</h2>
-        <!-- Nhúng Google Form không hiện chữ Đang tải -->
         <div class="form-container">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOkFFUlrbiqhfrzr1BYzDW6wDcleTmh5ulQeHGzSvciE8E8A/viewform?embedded=true" width="100%" height="600" frameborder="0"></iframe>
         </div>
@@ -56,10 +55,9 @@
         <a href="https://www.flexiquiz.com/SC/N/28c896b2-0121-4dc0-a3aa-f3eb8b405f8e" target="_blank" class="btn-quiz">🚀 Bắt đầu trắc nghiệm đánh giá</a>
     </div>
 
-    <!-- Nhúng thư viện SDK Coze -->
+    <!-- SDK Coze -->
     <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
     
-    <!-- Cấu hình và khởi tạo chatbot -->
     <script>
       new CozeWebSDK.WebChatClient({
         config: {
@@ -70,9 +68,10 @@
         },
         auth: {
           type: 'token',
-          token: 'pat_********', // Hãy thay 'pat_********' bằng Personal Access Token thật của bạn
+          // Thay chữ dưới đây bằng Token thật của bạn (giữ lại dấu nháy đơn)
+          token: 'Điền_Token_Thật_Của_Bạn_Vào_Đây', 
           onRefreshToken: function () {
-            return 'pat_********'; // Hãy thay bằng token thật ở đây luôn nhé
+            return 'Điền_Token_Thật_Của_Bạn_Vào_Đây'; 
           }
         }
       });
