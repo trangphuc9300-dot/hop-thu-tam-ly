@@ -68,10 +68,46 @@
         },
         auth: {
           type: 'token',
-          // Thay chữ dưới đây bằng Token thật của bạn (giữ lại dấu nháy đơn)
-          token: 'Điền_Token_Thật_Của_Bạn_Vào_Đây', 
+          
+          token: '
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7661818497130987573',
+    },
+    componentProps: {
+      title: 'Coze',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_********',
+      onRefreshToken: function () {
+        return 'pat_********'
+      }
+    }
+  });
+</script>', 
           onRefreshToken: function () {
-            return 'Điền_Token_Thật_Của_Bạn_Vào_Đây'; 
+            return '
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+<script>
+  new CozeWebSDK.WebChatClient({
+    config: {
+      bot_id: '7661818497130987573',
+    },
+    componentProps: {
+      title: 'Coze',
+    },
+    auth: {
+      type: 'token',
+      token: 'pat_********',
+      onRefreshToken: function () {
+        return 'pat_********'
+      }
+    }
+  });
+</script>'; 
           }
         }
       });
