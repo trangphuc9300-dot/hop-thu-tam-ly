@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+           <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -36,22 +36,36 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         
-        .quiz-area {
+        /* Khu vực nút tương tác trực quan */
+        .action-area {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
-        .btn-quiz {
+        .btn-link {
             display: inline-block;
-            padding: 18px 45px;
-            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+            padding: 18px 35px;
             color: white;
             text-decoration: none;
             border-radius: 15px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
             transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            min-width: 280px;
         }
-        .btn-quiz:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4); }
+        .btn-bot {
+            background: linear-gradient(45deg, #00d2ff, #0072ff);
+        }
+        .btn-bot:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4); }
+        
+        .btn-quiz {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            color: #333;
+        }
+        .btn-quiz:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 154, 158, 0.4); }
     </style>
 </head>
 <body>
@@ -65,24 +79,15 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOkFFUlrbiqhfrzr1BYzDW6wDcleTmh5ulQeHGzSvciE8E8A/viewform?embedded=true" width="100%" height="650" frameborder="0"></iframe>
         </div>
 
-        <div class="quiz-area">
-            <a href="https://www.flexiquiz.com/SC/N/28c896b2-0121-4dc0-a3aa-f3eb8b405f8e" target="_blank" class="btn-quiz">🚀 BẮT ĐẦU TRẮC NGHIỆM ĐÁNH GIÁ TÂM LÝ NHÉ</a>
+        <!-- CẬP NHẬT HAI NÚT BẤM TIỆN ÍCH SONG SONG -->
+        <div class="action-area">
+            <!-- Nút mở cổng trò chuyện AI an toàn tuyệt đối -->
+            <a href="https://www.coze.com/store/bot/7661818497130987573" target="_blank" class="btn-link btn-bot">🤖 TRÒ CHUYỆN CÙNG TRỢ LÝ TÂM LÝ AI</a>
+            
+            <!-- Nút trắc nghiệm chuẩn tên yêu cầu -->
+            <a href="https://www.flexiquiz.com/SC/N/28c896b2-0121-4dc0-a3aa-f3eb8b405f8e" target="_blank" class="btn-link btn-quiz">🚀 BẮT ĐẦU TRẮC NGHIỆM ĐÁNH GIÁ TÂM LÝ NHÉ</a>
         </div>
     </div>
 
-    <!-- Cấu hình nhúng Web Component chính thức từ Coze tránh lỗi 502 -->
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
-    <script>
-        const choiceet = new CozeWebSDK.WebChatClient({
-            config: {
-                bot_id: '7661818497130987573',
-            },
-            componentProps: {
-                title: 'Hộp Thư Tâm Lý',
-                icon: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ylaelieh7nuhps/coze/logo.png',
-                layout: 'pc',
-            }
-        });
-    </script>
 </body>
 </html>
